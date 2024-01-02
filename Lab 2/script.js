@@ -13,8 +13,8 @@ while (!exit) {
             break;
 
         case 3:
-            time = prompt("Enter the Hour in (from 0 to 24)")
-            alert(`${EX3(time)}`);
+            time = prompt("Enter the Hour in (from 0 to 24)");
+            alert(`${EX3(parseInt(time))}`);
             exit = 1;
             break;
         default:
@@ -87,9 +87,7 @@ function EX2() {
 }
 
 function EX3(time) {
-    if (time < 12) {
-        return `${time} AM`;
-
-    }
-    return `${time - 12} PM`;
+    const period = time >= 12 ? 'PM' : 'AM';
+    const Hour = (time % 12) || 12;
+    return `${Hour} ${period}`;
 }
