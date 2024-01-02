@@ -87,9 +87,9 @@ function EX2() {
 }
 
 function EX3(time) {
-    if (12 - time > 0) {
-        return `${Math.abs(12 - time)} AM`;
+    if (time < 12) {
+        return `${time} AM`;
 
     }
-    return `${Math.abs(12 - time)} PM`;
+    return `${time - 12} PM`;
 }
