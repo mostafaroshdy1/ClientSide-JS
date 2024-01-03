@@ -2,11 +2,11 @@ exit = 0;
 while (!exit) {
     const assignmentNum = Number(prompt("Enter Assignment number (1 / 2)"));
     if (assignmentNum === 1) {
-        result = "n";
+        let result = "n";
         while (result !== "y") {
             const firstName = prompt("Enter your first name");
             const lastName = prompt("Enter your last name");
-            const result = prompt(`Is you name ${firstName + " " + lastName} , (y/n)`)
+            result = prompt(`Is you name ${firstName + " " + lastName} , (y/n)`)
 
             if (result === 'y') {
                 let currentDate = new Date();

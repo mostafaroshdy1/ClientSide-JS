@@ -23,8 +23,9 @@ while (!exit) {
 }
 
 function EX1() {
+    let age;
     while (true) {
-        const age = prompt("Enter your age: ");
+        age = prompt("Enter your age: ");
         if (age !== null && age <= 0) {
             alert("age must be larger than 0");
         }
