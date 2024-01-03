@@ -1,6 +1,6 @@
 exit = 0;
 while (!exit) {
-    assignmentNum = Number(prompt("Enter Assignment number (1 / 2 / 3)"));
+    assignmentNum = Number(prompt("Enter Assignment number (1 / 2)"));
     switch (assignmentNum) {
         case 1:
             logIn();
@@ -9,12 +9,6 @@ while (!exit) {
 
         case 2:
             calc();
-            exit = 1;
-            break;
-
-        case 3:
-            time = prompt("Enter the Hour in (from 0 to 24)");
-            alert(`${EX3(parseInt(time))}`);
             exit = 1;
             break;
         default:
