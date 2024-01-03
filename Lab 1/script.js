@@ -1,12 +1,12 @@
 exit = 0;
 while (!exit) {
-    assignmentNum = Number(prompt("Enter Assignment number (1 / 2)"));
+    const assignmentNum = Number(prompt("Enter Assignment number (1 / 2)"));
     if (assignmentNum === 1) {
         result = "n";
         while (result !== "y") {
-            firstName = prompt("Enter your first name");
-            lastName = prompt("Enter your last name");
-            result = prompt(`Is you name ${firstName + " " + lastName} , (y/n)`)
+            const firstName = prompt("Enter your first name");
+            const lastName = prompt("Enter your last name");
+            const result = prompt(`Is you name ${firstName + " " + lastName} , (y/n)`)
 
             if (result === 'y') {
                 let currentDate = new Date();
@@ -20,8 +20,8 @@ while (!exit) {
     }
     else if (assignmentNum === 2) {
         alert("Hi,this is the first release of a calculator that only has a summation feature.");
-        num1 = Number(prompt("Enter First Number"));
-        num2 = Number(prompt("Enter Second Number"));
+        const num1 = Number(prompt("Enter First Number"));
+        const num2 = Number(prompt("Enter Second Number"));
         alert(`The result : ${num1}+${num2}=${num1 + num2}`);
         exit = 1;
     }

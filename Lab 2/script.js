@@ -1,6 +1,6 @@
 exit = 0;
 while (!exit) {
-    assignmentNum = Number(prompt("Enter Assignment number (1 / 2 / 3)"));
+    const assignmentNum = Number(prompt("Enter Assignment number (1 / 2 / 3)"));
     switch (assignmentNum) {
         case 1:
             EX1();
@@ -13,7 +13,7 @@ while (!exit) {
             break;
 
         case 3:
-            time = prompt("Enter the Hour in (from 0 to 24)");
+            const time = prompt("Enter the Hour in (from 0 to 24)");
             alert(`${EX3(parseInt(time))}`);
             exit = 1;
             break;
@@ -24,7 +24,7 @@ while (!exit) {
 
 function EX1() {
     while (true) {
-        age = prompt("Enter your age: ");
+        const age = prompt("Enter your age: ");
         if (age !== null && age <= 0) {
             alert("age must be larger than 0");
         }
