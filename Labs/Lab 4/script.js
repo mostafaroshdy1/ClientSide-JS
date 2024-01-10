@@ -9,7 +9,7 @@
 //         this.healthRate = healthRate;
 //     }
 
-//     sleep = (hours) => {
+//     sleep(hours) {
 //         if (hours < 7) {
 //             this.sleepMood = "tired";
 //         } else if (hours > 7) {
@@ -18,7 +18,7 @@
 //             this.sleepMood = "happy";
 //         }
 //     }
-//     eat = (meals) => {
+//     eat(meals) {
 //         if (meals === 3) {
 //             this.healthRate = 100;
 //         } else if (meals === 2) {
@@ -27,8 +27,8 @@
 //             this.healthRate = 50;
 //         }
 //     }
-//     buy = (items) => {
-//         this.money -= 10*items;
+//     buy(items) {
+//         this.money -= 10 * items;
 //     }
 // }
 
