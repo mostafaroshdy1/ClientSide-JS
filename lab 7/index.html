@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+
+</head>
+<body>
+    <div id="loginBlock" class="loginBlock">
+        <div>
+            <h3 id="response"></h3>
+            <form>
+                <input id="username" type="text" placeholder="username">
+                <input id="password" type="text" placeholder="password">
+                <input id="login" type="button" value="LOGIN">
+                <h3 id="response"></h3>
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="todoBlock" class="visible parent">
+        <div id="tasksBlock" class="tasks no-border"></div>
+        <div class="border"></div>
+        <div class="add">
+            <label for="taskName">Task:</label>
+            <input id="taskName" type="text" class="task-name" placeholder="Task name" />
+            <button id="addTask" class="add-button">Add</button>
+        </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
