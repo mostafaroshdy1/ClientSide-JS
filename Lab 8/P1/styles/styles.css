@@ -26,8 +26,8 @@ body {
 
 .infocus {
     margin-top: 25px;
-    width: 400px;
-    height: 350px;
+    width: 800px;
+    height: 600px;
     background-color: aquamarine;
     z-index: -1;
 
