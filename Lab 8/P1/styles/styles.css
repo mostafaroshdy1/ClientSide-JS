@@ -29,7 +29,6 @@ body {
     width: 800px;
     height: 600px;
     background-color: aquamarine;
-    z-index: -1;
 
 }
 
@@ -60,8 +59,5 @@ body {
 
 .rightBtn:hover,
 .leftBtn:hover {
-
     background-color: rgb(194, 83, 83);
-
-
 }

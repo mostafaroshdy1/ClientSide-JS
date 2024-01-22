@@ -7,17 +7,15 @@ const firstElement = carouselEl[0];
 const lastElemen = carouselEl[carouselEl.length - 1];
 carouselSetup();
 
+setInterval(moveToRight, 4000);
 
 rightBtn.addEventListener('click', (e) => {
-    const temp = carouselArray.shift()
-    carouselArray.push(temp);
-    carouselSetup();
+    moveToRight();
 })
 
+
 leftBtn.addEventListener('click', (e) => {
-    const temp = carouselArray.pop();
-    carouselArray.unshift(temp);
-    carouselSetup();
+    moveToLeft();
 })
 
 
@@ -28,5 +26,28 @@ function carouselSetup() {
     }
     carouselArray[carouselArray.length / 2].classList.remove("hidden");
     carouselArray[carouselArray.length / 2].classList.add("infocus");
+    carouselArray[carouselArray.length / 2].style.backgroundColor = getRandomColor();
+}
 
+function moveToRight() {
+    const temp = carouselArray.shift()
+    carouselArray.push(temp);
+    carouselSetup();
+}
+
+function moveToLeft() {
+    const temp = carouselArray.pop();
+    carouselArray.unshift(temp);
+    carouselSetup();
+}
+
+
+
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
 }
