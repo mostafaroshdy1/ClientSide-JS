@@ -10,7 +10,7 @@ const tasksBlock = document.getElementById("tasksBlock");
 const taskName = document.getElementById("taskName");
 const body = document.getElementsByTagName("body");
 const response = document.getElementById("response");
-let a = document.getElementsByTagName('a');
+const a = document.getElementsByTagName('a');
 
 
 tasksBlock.addEventListener('click', (e) => {

@@ -1,0 +1,67 @@
+.carousel {
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 100px; */
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-el {
+    margin-top: 50px;
+    height: 300px;
+    width: 300px;
+    background-color: lightblue;
+    font-size: 30px;
+    color: darkgreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infocus {
+    margin-top: 25px;
+    width: 400px;
+    height: 350px;
+    background-color: aquamarine;
+    z-index: -1;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.directions {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.rightBtn,
+.leftBtn {
+    margin: 30px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: red;
+    border-radius: 15px;
+    font-size: large;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.rightBtn:hover,
+.leftBtn:hover {
+
+    background-color: rgb(194, 83, 83);
+
+
+}
