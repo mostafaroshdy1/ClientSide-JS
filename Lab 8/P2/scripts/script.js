@@ -10,21 +10,27 @@ const clearBtn = document.querySelector(".clearBtn");
 days.unshift(days.pop());
 setInterval(updateTime, 1000);
 
-
-
-
+const alerts = [];// collects the timeoutID of each setBtn click so that be able to stop them when clearBtn is clicked
 
 
 setBtn.addEventListener('click', () => {
-    setTimeout(() => {
-        alert("Times up!!!")
-    }, alarmSeconds())
+    alerts.push(
+        setTimeout(
+            () => {
+                alert("Times up!!!")
+            }
+            , alarmSeconds()
+        )
+    )
 })
 
 clearBtn.addEventListener('click', () => {
     hoursIn.value = "";
     minutesIn.value = "";  // Wrap the number in quotes to make it a string
     secondsIn.value = "";
+    for (let i = 0; i < alerts.length; i++) {
+        clearTimeout(alerts[i]);
+    }
 });
 
 
