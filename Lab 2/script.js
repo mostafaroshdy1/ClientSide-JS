@@ -1,26 +1,24 @@
-exit = 0;
-while (!exit) {
-    const assignmentNum = Number(prompt("Enter Assignment number (1 / 2 / 3)"));
-    switch (assignmentNum) {
-        case 1:
-            EX1();
-            exit = 1
-            break;
+const assignmentNum = Number(prompt("Enter Assignment number (1 / 2 / 3)"));
+switch (assignmentNum) {
+    case 1:
+        EX1();
+        exit = 1
+        break;
 
-        case 2:
-            EX2();
-            exit = 1;
-            break;
+    case 2:
+        EX2();
+        exit = 1;
+        break;
 
-        case 3:
-            const time = prompt("Enter the Hour in (from 0 to 24)");
-            alert(`${EX3(parseInt(time))}`);
-            exit = 1;
-            break;
-        default:
-            console.log("invalid input");
-    }
+    case 3:
+        const time = prompt("Enter the Hour in (from 0 to 24)");
+        alert(`${EX3(parseInt(time))}`);
+        exit = 1;
+        break;
+    default:
+        console.log("invalid input");
 }
+
 
 function EX1() {
     let age;

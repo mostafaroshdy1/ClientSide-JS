@@ -135,4 +135,4 @@
 // const ahmed = Person("Ahmed Adel", 15000, "tired", 100); // for factory function method
 
 
-console.log(ahmed);
+// console.log(ahmed);
