@@ -1,20 +1,18 @@
-exit = 0;
-while (!exit) {
-    assignmentNum = Number(prompt("Enter Assignment number (1 / 2)"));
-    switch (assignmentNum) {
-        case 1:
-            logIn();
-            exit = 1
-            break;
+const assignmentNum = Number(prompt("Enter Assignment number (1 / 2)"));
+switch (assignmentNum) {
+    case 1:
+        logIn();
+        exit = 1
+        break;
 
-        case 2:
-            calc();
-            exit = 1;
-            break;
-        default:
-            console.log("invalid input");
-    }
+    case 2:
+        calc();
+        exit = 1;
+        break;
+    default:
+        console.log("invalid input");
 }
+
 
 function logIn() {
     while (true) {
