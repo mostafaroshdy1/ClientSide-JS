@@ -11,7 +11,7 @@ const body = document.getElementsByTagName("body");
 const response = document.getElementById("response");
 const a = document.getElementsByTagName('a');
 
-if (JSON.parse(localStorage.getItem("tasks")).length > 0) {
+if (localStorage.getItem("tasks")) {
     var tasks = JSON.parse(localStorage.getItem("tasks"));
     var tick = tasks[tasks.length - 1].id + 1;
     var cross = tasks[tasks.length - 1].id + 1;
@@ -119,7 +119,13 @@ function removeTask(id) {
             tasks.splice(i, 1);
         }
     }
-    localStorage.setItem("tasks", JSON.stringify(tasks));
+    if (tasks.length) {
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+    } else {
+        localStorage.removeItem("tasks");
+    }
+
+
 }
 function markDone(id) {
     for (let i = 0; i < tasks.length; i++) {
