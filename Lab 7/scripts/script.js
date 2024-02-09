@@ -1,3 +1,4 @@
+import 'https://tomashubelbauer.github.io/github-pages-local-storage/index.js';
 let user;
 const loginBtn = document.getElementById("login");
 const username = document.getElementById("username");
